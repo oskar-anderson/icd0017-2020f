@@ -1,88 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#00FF00"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/StatsBackground"
+    android:maxHeight="400dp">
 
     <TextView
         android:id="@+id/stats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="STATS"
+        android:text="@string/stats"
         android:textSize="36sp"
+        android:layout_gravity="center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCenterDividerRight"
         app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCenterDividerLeft"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0600000" />
 
-    <TextView
-        android:id="@+id/round"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Round:"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCenterDividerLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal1" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/round"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCenterDividerRight"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal1" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineVerticalCenterDividerLeft"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="66dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineVerticalCenterDividerRight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="367dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineHorizontal1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="127dp" />
+        android:gravity="center_horizontal"
+        >
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineHorizontal2"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/roundIndicator"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="@string/round_number_indicator"
+            android:textSize="36sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/roundNumber"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/round_number_value"
+            android:textSize="36sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="187dp" />
+        android:gravity="center_horizontal"
+        >
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:lines="2"
-        android:text="Current\n Player:"
-        android:textSize="36sp"
-        app:layout_constraintStart_toStartOf="@+id/guidelineVerticalCenterDividerLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/currentPlayerIndicator"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="@string/current_player_indicator"
+            android:textSize="36sp"
+            android:layout_marginEnd="32dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/currentPlayerValue"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/current_player_value"
+            android:layout_marginStart="32dp"
+            android:textSize="36sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Red"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintEnd_toStartOf="@+id/guidelineVerticalCenterDividerRight"
-        app:layout_constraintTop_toTopOf="@+id/guidelineHorizontal2" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="@string/reset">
+    </Button>
+
+</LinearLayout>

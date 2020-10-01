@@ -5,96 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-  <!--
-        <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout07"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_margin="10dp"
-        android:background="#FFC107"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.952">
-
-
-        <include
-            android:id="@+id/row0"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/row1"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-
-        <include
-            android:id="@+id/row1"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/row2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/row0" />
-
-        <include
-            android:id="@+id/row2"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/row3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/row1" />
-
-        <include
-            android:id="@+id/row3"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/row4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/row2" />
-
-        <include
-            android:id="@+id/row4"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toTopOf="@id/row5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/row3" />
-
-        <include
-            android:id="@+id/row5"
-            layout="@layout/row"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/row4" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
--->
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout07"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#0500A8"
+        android:background="@color/BoardPadding"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="w,1"
+        app:layout_constraintDimensionRatio="w,6:7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -102,73 +20,73 @@
 
         <include
             android:id="@+id/row0"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row1"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTag="0"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/row1"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row2"
             app:layout_constraintStart_toEndOf="@id/row0"
+            app:layout_constraintTag="1"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/row2"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row3"
             app:layout_constraintStart_toEndOf="@id/row1"
+            app:layout_constraintTag="2"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/row3"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row4"
             app:layout_constraintStart_toEndOf="@id/row2"
+            app:layout_constraintTag="3"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/row4"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row5"
             app:layout_constraintStart_toEndOf="@id/row3"
+            app:layout_constraintTag="4"
             app:layout_constraintTop_toTopOf="parent" />
 
         <include
             android:id="@+id/row5"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/row6"
             app:layout_constraintStart_toEndOf="@id/row4"
+            app:layout_constraintTag="5"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <include
             android:id="@+id/row6"
+            style="@style/column"
             layout="@layout/column"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/row5"
+            app:layout_constraintTag="6"
             app:layout_constraintTop_toTopOf="parent" />
 
 

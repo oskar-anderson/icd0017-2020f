@@ -5,4 +5,6 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="StatsBackground">#B50FB5</color>
     <color name="StatsTextColor">#FF75FF</color>
+    <color name="Board">#00189E</color>
+    <color name="BoardPadding">#468436</color>
 </resources>
