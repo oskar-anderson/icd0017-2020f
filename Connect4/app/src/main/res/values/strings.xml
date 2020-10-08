@@ -2,7 +2,7 @@
     <string name="app_name">Connect4</string>
     <string name="stats">STATS</string>
     <string name="round_number_indicator">Round:</string>
-    <string name="round_number_value">0</string>
+    <string name="round_number_value">1</string>
     <string name="current_player_indicator">Current\nPlayer:</string>
     <string name="current_player_value">Red</string>
     <string name="reset">Reset</string>
