@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ContactBook</string>
+
+    <string name="firstName">first name</string>
+    <string name="lastName">last name</string>
+    <string name="ViewAll">View All</string>
+    <string name="Add">Add</string>
+
+    <string name="ContactTypeValue">Contact Type</string>
+    <string name="Contact">Contact</string>
+    <string name="types">Types</string>
+    <string name="contacts">Contacts</string>
+    <string name="person">Person</string>
+
+</resources>
